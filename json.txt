@@ -1,0 +1,35 @@
+-GET STUDENT:
+http://localhost:8008/api/jose-students
+
+
+-POST STUDENT:
+
+{
+  "activo": true,
+  "name": "string",
+  "lastName": "string",
+  "age": 0
+}
+
+-DELETE STUDENT:
+
+http://localhost:8008/api/jose-students/(name)
+
+
+-GET CURSOS:
+
+http://localhost:8008/api/jose-cursos
+
+
+-POST CURSOS:
+
+{
+  "precio": 600,
+  "inscripciones": "2024-05-21",
+  "activo": true,
+  "nombre": "Curso de Lenguaje",
+  "joseStudentId": 1
+}
+
+-DELETE CURSOS:
+http://localhost:8008/api/jose-cursos/(nombre)
